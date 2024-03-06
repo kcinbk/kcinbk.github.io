@@ -1,66 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
     <style>
-        body {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            min-height: 50; /* Ensure the body takes up at least the full viewport height */
-            margin: 10px; /* Reset body margin */
-        }
         
-        .header {
-            
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin: 10px; 
-        }
-        .header h1, .header h3 {
-            margin: 0;
-        }
         .header .title {
-            text-align: left;
-            font-family: Arial;
-            color: #3077DE;
-        }
+            font-family: "Courier New";
+            text-decoration: underline;
+            }
+            
         .header .subtitle {
-            text-align: left;
-            font-family: Arial;
-            margin:10px;
+            text-decoration: underline;
+            color: #FF4500;
+            font-family: "Courier New";
+            }
+        
+        .header .headshot {
+            width:250px;
+            height:250px;
+            float:right;
+            margin-left:50px;
+            margin-bottom:50px;
+            vertical-align:top:;
+            }
+        
+        body {
+            display:flex;
+            flex-direction:column;
+            justify-content:center;
+            align-items:center;
+            margin:20px; 
         }
         
         .paragraph {
             text-align: left; 
             margin: 10; 
-            max-width: 800px; 
+            max-width: 600px; 
             word-wrap: break-word; 
-            font-family: Arial;
+            font-family: "Courier New";
+            font-weight: 100;
         }
-            
+
+        .icon {
+            width:100px;
+            height:100px;
+            margin:15px;
+            padding:10px;
+
+        }
+
     </style>
-</head>
-<body>
+
+
+
+<head>
     <div class="header">
         <div class="title">
-            <h1>Keenan Chen</h1>
+            <h1>
+                <span style="font-weight:light;"> 
+                    Keenan Chen
+                </span>
+            </h1>
         </div>
-        <div class="subtitle">
-            <h5>Computation journalist | Misinformation researcher
-            </h5>
-        </div>
-    </div>
 
-    <p class='paragraph'> I am a senior researcher at the Information Futures Lab at Brown University. Most recently, I have worked on experimenting with machine learning to understand how social media users from discuss the health impact of climate change in different countries.
+        <div class="headshot">
+            <img src="https://media.licdn.com/dms/image/D4D03AQGdqSxOcdsEkQ/profile-displayphoto-shrink_800_800/0/1709737221756?e=1715212800&v=beta&t=CvmCMT1QFkMjBdkEs4Gi8XJyp94ch7KcT_ZeTeeAYy8" alt="keenan_headshot", class="headshot">
+        </div>
+        
+        <div class='subtitle'>
+            <h3>
+                <span style="font-weight:light;"> 
+                    Computational journalist  
+                    <br>
+                    Misinformation researcher
+                    </br>
+                </span>
+            </h3>
+        </div>
+  
+     
+</head>
+
+
+<body>
+    <p class='paragraph'> I am a senior researcher at the Information Futures Lab at Brown University. 
+        Most recently, I have worked on improving our understanding of how people discuss the health impact of climate 
+        change on themselves in different countries using social media data and machine learning. 
+        The findings of this ongoing research, which the Rockefeller Foundation generously supports, 
+        will help climate change advocates navigate the narrative landscape and improve their intervention designs.  
     </p>
     
-    <p class='paragraph'> You can find some of my works on <a href="https://www.google.com/search?q=%22keenan+chen%22+inurl%3Aarticles+site%3Ahttps%3A%2F%2Ffirstdraftnews.org%2F&newwindow=1&sca_esv=1fcb60ee6ef69c6a&rlz=1C5GCCM_en&sxsrf=ACQVn08Nn4ez58p8Jg7p0E1UIQS_UbQ-YA%3A1709683921299&ei=0bTnZfvUEdagptQP9OCK0AE&ved=0ahUKEwi7gbr2rN6EAxVWkIkEHXSwAhoQ4dUDCBA&uact=5&oq=%22keenan+chen%22+inurl%3Aarticles+site%3Ahttps%3A%2F%2Ffirstdraftnews.org%2F&gs_lp=Egxnd3Mtd2l6LXNlcnAiPSJrZWVuYW4gY2hlbiIgaW51cmw6YXJ0aWNsZXMgc2l0ZTpodHRwczovL2ZpcnN0ZHJhZnRuZXdzLm9yZy9I-U5Q7xNY50xwBHgAkAEAmAF7oAG7CaoBBDE3LjG4AQPIAQD4AQGYAgCgAgCYAwCIBgGSBwCgB6oG&sclient=gws-wiz-serp#ip=1">the archive of First Draft</a>, where I tracked and reported on misinformation and disinformation throughout the Covid-19 pandemic and the 2020 elections, or my various projects at my repo.  
-    
+    <p class='paragraph'> 
+        Some of my previous works on <a href="https://tinyurl.com/ev8jttv5"> the archive of First Draft</a>, 
+        where I tracked and reported on misinformation and disinformation throughout the Covid-19 pandemic and the 
+        2020 election.
+        
+        You can also find in various publications that cited my reserach or reporting. Here are a few on top of my head:
     </p>
+    
+    <p>
+        <a href='https://www.npr.org/2021/04/15/987182241/the-most-popular-j-j-vaccine-story-on-facebook-a-conspiracy-theorist-posted-it'>
+            <img src='https://media.npr.org/chrome_svg/npr-logo.svg' class='icon'>
+        </a>
+
+        <a href="https://abcnews.go.com/International/foreigners-black-people-unwelcome-parts-china-amid-covid/story?id=70182204">
+            <img src="https://yt3.googleusercontent.com/OOT0eq8LoW8V3PMURGYuk0kRSgRGP7EsuGZoODhHBcg1jCB1qkuIAxS-XGnjKX9Q6rf-WKTvkQ=s900-c-k-c0x00ffffff-no-rj" class='icon'>
+        </a>
+
+        <a href="https://www.nbcnews.com/tech/tech-news/inside-campaign-pizzagate-hunter-biden-n1244331">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/f/f0/NBC_News_%282023%29.svg" class='icon'>
+        </a>
+
+        <a href="https://foreignpolicy.com/2020/11/02/guo-wengui-steve-bannon-hunter-biden-conspiracies-disinformation/">
+            <img src="data:image/png;base64,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" 
+            class='icon'>
+        </a>
+
+
+    </p>
+
 </body>
 </html>
