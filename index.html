@@ -4,7 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
         
-        
+
 
         .header .title {
             font-family:"Courier New";
@@ -43,8 +43,8 @@
         .icon_portfolio {
             width:30px;
             height:30px;
-            margin-right:50px;
-            padding:10px;
+            margin-right:30px;
+            padding-bottom:10px;
             }
 
         body {
@@ -65,11 +65,31 @@
             font-weight: 100;
         }
 
-        .icon_media {
-            width:70px;
-            height:70px;
+        .clip {
+            font-family: "Times New Roman";
+            font-size: 110%;
+            max-width: 600px;
+            font-style: italic;
+            overflow: hidden;
+            margin-bottom: 20px;
+        }
+
+
+
+        .icon_media_1 {
+            width:60px;
+            height:60px;
+            float: left;
+            vertical-align: middle;   
+            height:auto;
+            display: inline-block;
+            margin-right:10px;
+        }
+        .icon_media_2 {
+            width:60px;
+            height:60px;
             align-items:center;
-            margin-right:70px;
+            margin-right:85px;
             padding:1px;
         }
 
@@ -87,16 +107,8 @@
         </div>
         
         <div class='subtitle'>
-            <h3>
-                    Computational journalist  
-                    <br>
-                    Misinformation researcher
-                    </br>
-            </h3>
+            <a href="https://drive.google.com/file/d/1BpZss9tWFYFMhvLp_s52qahUEqzDKs8s/view" target="_blank"> <img src="data:image/png;base64,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" class='icon_portfolio'></a><a href="https://www.linkedin.com/in/keenanchen/" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/LinkedIn_icon.svg/2048px-LinkedIn_icon.svg.png" class='icon_portfolio'></a><a href="https://github.com/kcinbk?tab=repositories" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" class='icon_portfolio'></a><a href="https://bsky.app/profile/kcinbk.bsky.social" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Bluesky_Logo.svg/1200px-Bluesky_Logo.svg.png" class='icon_portfolio'></a>
 
-            <a href="https://drive.google.com/file/d/1Y5YRu8Hl-22UVvDH2e0bgzd-dyu6jjHh/view"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAdVBMVEX///8BAQHt7e3u7u7r6+sAAADy8vL29vYjIyPKysq9vb309PTa2tqdnZ12dnZCQkJVVVWqqqptbW2SkpI9PT2wsLBgYGDR0dGCgoLg4OCkpKSLi4tcXFwmJiZWVlYzMzMTExPCwsJzc3NNTU1lZWUYGBi2trbD4hytAAAJIklEQVR4nO2da3viKhSF1QjU0FStWi+trbY9/v+feCBalQQwwOaSTPgyax4nkndM9l5hQxgMeBtlWTbqqBokch49YU/4kJC1cUdVKc+w446qLPpl5FdlPWHrVXZ3S447qS4BNY2T8aPOLY0Lyms+jH4ePaEzYXTn4U/1nqb16l/I+N0nvN2S8ZNz72ms1LmlcUF5zYfRz6MndCaM7jz8qd7TtF65ZXzCWzAVljBjXeeLzz0K0fafi5zYE95uSYNkSvFqGQTu1pYnTAN6moL3OQzZeIeFxZn+NbMLYBIa7wo5CZHxMdlE4Tszboh3QoynsfhKxin27Gky/BUTkCF+4cyvp/mJC8gQZ349zSY2IEPceMz4eB0tyNwRojX2RkgP8QEZ4sEkoBp5GlqkAMgQCwN3Y+ZpErhGeUPI4Jwvrdmte6oCBjOl1X5Pjc/ZjLCSKRD6mq+fnye8PfPmSa3nXxVGnjG8EIr9ILQqP2U2B2PP6lTt2pywiT84VnpZ4+bHOipaSVPMgnvwNHQhdpIHHXXJxc4X1IOnIa/3naD94yNA1V7o/ZV4yPhEeKhAu8CEQi5GUy+E4v/iMTDhUbyCDAgbexryJPQxeXwEqJoIvT8RH55GJMxx0EoSzkVCL56mShjsAuWqTugh4/eEaRM28QeK+zCEpxlJ7kN4T6OIpfpjs1JR9ns39yByVY2lzY9tng/rhI8uFEom85ef6exltya4SR8aJSeEzfimhBgXh+sT3n7eQcL8/tEVoadtJEJvnqY6+I+4le2QpyG/9bEHtCFWcEl6GiIdOi4fSLqR8fFROiyH0LgrhEQ+dIzQTzRCYE8zVw2sonXT3ioqMU9DlkrCX9IFT4O3ysFxhGgXMj5VXqT8ONwFwoWGcEc74Gnot4ZwgdV9ZMJMKCx8mpanedEQFuo+ssnn29vb54w19ufHAqfraTS1cG5rVH3glVBw+rgvhCaW8XcawlxDKJTv0FvChBMN4TgSIbCnUefDoaaPGmHCnkYZTNE71fQhXN1lGTRRT8NNjQIQbXWGXUaYZMZn6leOWM686wah/E5Ee6rtww+hB0/D1bMEESHWta4P1X2Ynqdhitaf8q+Vf1Uf6lianKcp7ff6IDAitN8+MN0tyvjn8x28Xyf7cLEgD49oGSFTZPd18ZjT+UAfZCS+9DNlT8MVL8psj4vpAR1mu8l4wH/CB0dsV6fTaccb+3M1wXefJuZpSrVdiEsyZvPxo95G9G8SFL5Oh0rT0zC12ldm3PG/LnNCG/ZWU0llfIqL+nzCC+SOdGCchpykfBfIp4ndOq10PA0efWgn2iL03aS3mkrG0+Dxo7ngPPWbz8VJxtOQvMFMaWbfjIcUU8n45NRoKjhHbCchbfILXhBDE4J4GoMFJwiRxv0OkvE0mclqBT5/snW1J/LWHJB9wQtpW8anKxNAdp3Wq1CYEHIOQfRat0iIEBuuqJHM8z1uWHvnjYsCiBDK09B3M0D2FfPqoMZOeBj5ET5NwNMYL4pCh3aN02iqMUrEo7iQMPFRjP8sCGekRYTP5oDnMf5QhM6eRlO61yDucGtqT+Jyk8aEb2IfKdeexlbLS8+LQW/fknJlJrcBZISj1hBa5IryW47qb0ms9mRsaC7fshK+JeHaE7V81wJa3H9Lyp6GPTjZtc39RL6U59PgU8HagrfCRL2fhG95Fj494YQIz4ryZqbwSPMt6Y3T+FTRPY1/FdvT+FexM35PGJMQxtP4VwmM0/hVsT2Nf5VGxu8JoxL2nobH0oPg/EVPc3sdEAZWAT0Nfb+rKWw24qreFX8YmPNWgKmVcAYBMn52fSC4Vohun/5YPh/q2k9wQp2a2T3j61r4cRqt8kcY0tNolFn5tyFh+HEajfJEGDrj94RpEzo6D+r5PgzjabRqOwRHDF970ioMjxi+MqNX8IipEeoW4UcmhPE0Y454eOw1zX1pNE8zkszz3f6+vr6+8Pb66q6+i+BruQVF9vV5vpkwLc1dBR/FEAmX13fQAt3InkcxbAiN5/lGJTR2MpwQbe2OtVERPM0UlUsmu1R7qij+zl2bZQW2KnzGL98qjMKFm0iEFssKwhPaeprLm6Ev4aYbtSdBXV92VYYbv3CRPM31dV5hwk2UjD+8IfoPN1EJteHGpWQR3dPcdShzN9n6lOf5irc8t1Hr0Gu5657mHlHibp7Bng/jeRoBsRZuHJ/6o49iVLZfk4SbzG3sJjVCabhx+hWjj9PUttCTuRs+duNIGN/T3CNK3I39hRq79iR7Rak83Ngixq7MSF/CKnM31ohJEirCjR1i7NqT4kW6MndjGW6i154U25FK3Y1V0ohee1JtuArmbjxl/ObmX7mlrCrcGDcvhDgv96srPb5erdV7ysrDzbRsS94aqm8gQsHTEIP/Ys31JXE32bkUQa5FicfKz3uEYWqAHsZuwDwNUJUTfuwGLOND1XHBx26SIwQfKgbzNHC1eODKFJSnIYCzDdiv6L7LE7inASWcGW/0rlP2+x/6IhSXgLoroD0s4QjRB9hMnbOy34e06mnAAGHLM+J+0mhB43qa8q0lkJ5Gth+wtacB8KXn17LUHqEcKhgr9z2d//5+eGraNEMT0iCzTWVfbiJsE6JW6udDfg/We5qbPh3qrhebvdWNXYZmw6MPyRFzyImLl1eiWHka93Ga8h6sHkEKQD7WRUFNztQ2a6lGomRBpgCdeooOJl4CrjJz6V0WZHawgOzBLB6h1MmA3oOsj43RmQLWnoYKJwP7C5aZwuRMq57GpfYkdTIE9h4coi9s6JYGFheoglARZED50BSbrj+GI5QGGdh7EJW7uMQiVAQZUD5muM3P9ELo7GmkTgYwyHDvVlidKZCnYfdg7d/xIAPXlids5GRuCiQfSoPM7vFpN2rD/eciJ7bjAzAZXz4mgxs+pjxWpq83BycEH5OBVBCeBnxMBlQBeBroMRlodW4O+VAaZFJSroTQA7/JESYdZCA8DX9NrvmxYZWTp5GNyaSnHPJh8kHGNeOnH2RcCdMPMm6e5itpJwPgafAmbSfj7mlG1lvEtSXjt0f9M4TRnYc/Ze1p2qPakNPc8mFP2HYF936aVNUloKZxMol5mtaonrD96txuAbV76n9qY3fZOcAFkwAAAABJRU5ErkJggg==" class='icon_portfolio'></a><a href="https://www.linkedin.com/in/keenanchen/"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/LinkedIn_icon.svg/2048px-LinkedIn_icon.svg.png" class='icon_portfolio'></a><a href="https://github.com/kcinbk?tab=repositories"><img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" class='icon_portfolio'></a>
-
-           
         </div>
   
      
@@ -104,75 +116,95 @@
 
 
 <body>
-    <p class='paragraph'> 
-        Most recently, I was a <strong>senior researcher</strong> at <a href="https://sites.brown.edu/informationfutures/">The Information Futures Lab </a> 
-        at Brown University. I investigated the harmful impacts of misinformation on public health and explored 
-        how we can make quality information more accessible to the public. 
-    <p>
-    <p class='paragraph'> 
-        My <a href='https://bpb-us-w2.wpmucdn.com/sites.brown.edu/dist/4/371/files/2024/09/IFL-Climate-and-Health-report.pdf'>latest research</a> 
-        involved training a machine-learning classifier to analyze millions of social media posts about climate change. 
-        We found that <b>only 3.1 percent</b> of social media posts and news headlines about climate change also mentioned its health impacts, 
-        meaning the public rarely learns about the connection between the two -- an approach that could have helped drive support for climate action. 
-        Additionally, we found that <b>news media</b> predominantly covered the health impacts 
-        of climate change through <b>purely negative messaging </b>, without offering readers actionable solutions, ultimately missing the mark. 
-    </p>
-
-    <p class='paragraph'> 
-        I am looking to focus more on <strong> data-driven, investigative journalism</strong>. For example, I recently created this 
-        artificial intelligence-powered <a href="https://kcinbk.github.io/the_real_ronald/"> monitoring dashboard</a> that flags rumors 
-        about election integrity and extracts the locations mentioned in posts shared on a prominent far-right message board, 
-        and <a href="https://kcinbk.github.io/nyc_2024/"> data visualizations</a> illustrating how the 2024 presidential election 
-        played out in New York City.
-
-
-    <p class='paragraph'> 
-        Some of my previous works on <strong> misinformation and disinformation</strong> is available on <a href="https://archive.ph/ngihj"> 
-        the archive of First Draft</a>, where I was a <strong>senior researcher</strong>. During this time, I wrote extensively 
-        on these topics throughout the COVID-19 pandemic and the 2020 election. For example, I led <strong> an exclusive investigation</strong> 
-        into Radio Free Asia and uncovered how this US-taxpayer-funded news outlet <a href='https://archive.ph/18uFZ'> repeatedly promote anti-vaccine narratives 
-        abroad</a> during the early rollout of the COVID-19 vaccines.
+        <p class='paragraph'> 
+           
         </p>
 
-    <p class='paragraph'>
-        You may have also come across my other writing on health misinformation, participatory disinformation, voter suppression, 
-        and other forms of information disorder, which have been cited in various publications. Here are a few examples off the top of my head:
+        <p class='paragraph'>
+            I am a freelance data journalist specializing in using <b> public and social media data</b>, and <b> computational methods </b> to uncover hidden patterns and 
+            deep-dive into more complex stories. 
         </p>
 
-    <p>
-        <a href="https://abcnews.go.com/International/foreigners-black-people-unwelcome-parts-china-amid-covid/story?id=70182204">
-            <img src="https://yt3.googleusercontent.com/OOT0eq8LoW8V3PMURGYuk0kRSgRGP7EsuGZoODhHBcg1jCB1qkuIAxS-XGnjKX9Q6rf-WKTvkQ=s900-c-k-c0x00ffffff-no-rj" 
-            class='icon_media'></a>
+        <p class="paragraph">
+            Currently, I focus my attention on how well-intentioned public policies in New York City have failed due to weak enforcement, lack of oversight, or flawed design. 
+            Some of my recent works included:       
+        </p>
 
-        <a href='https://www.npr.org/2021/04/15/987182241/the-most-popular-j-j-vaccine-story-on-facebook-a-conspiracy-theorist-posted-it'>
-            <img src='https://media.npr.org/chrome_svg/npr-logo.svg' class='icon_media'></a>
+        <p class="clip"> 
+            <a href="https://hellgatenyc.com/crackdown-on-bogus-placards-is-bogus-data-reveals/" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Hell_Gate_%28website%29_logo_2024.svg/1200px-Hell_Gate_%28website%29_logo_2024.svg.png" 
+                    class='icon_media_1'>
+                City Council’s 'Crackdown' on Bogus Parking Placards Is Itself Bogus, Data Reveals
+            </a>
+        </p>
 
-        <a href="https://foreignpolicy.com/2020/11/02/guo-wengui-steve-bannon-hunter-biden-conspiracies-disinformation/">
-            <img src="data:image/png;base64,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" 
-            class='icon_media'></a>
+        <p class="clip">
+            <a href="https://slate.com/technology/2025/03/cash-jordan-youtube-nyc-real-estate-right-wing-conspiracy-theories.html" target="_blank"> 
+                <img src="https://dot.cdnslate.com/static/media/sites/slate-com/icon.400x400.09ec623.png" 
+                class='icon_media_1'>
+                He Used to Make Videos About NYC Real Estate. Then He Became Radicalized by the Right
+            </a>  
+        </p>
 
-        <a href="https://www.nbcnews.com/tech/tech-news/inside-campaign-pizzagate-hunter-biden-n1244331">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/f/f0/NBC_News_%282023%29.svg" class='icon_media'> </a>
 
-    </p>
 
-    <p>
-        <a href="https://wisconsinwatch.org/2020/11/milwaukee-flash-drive-vote-fraud-misinformation/">
-            <img src="https://wisconsinwatch.org/wp-content/uploads/2019/06/WCIJ_Logo_Stacked_FullColor_RGB-1.png" 
-            class='icon_media'></a>
+        <p class='paragraph'> 
+            Previously, I was a <strong>senior researcher</strong> at <a href="https://sites.brown.edu/informationfutures/">The Information Futures Lab </a> 
+            at Brown University. My <a href='https://bpb-us-w2.wpmucdn.com/sites.brown.edu/dist/4/371/files/2024/09/IFL-Climate-and-Health-report.pdf'> research</a> 
+            included training a machine-learning classifier to contextualize social media content about <b>climate change's impacts on public health</b>. We found 
+            that <b>only 3.1 percent</b> of social media posts and news headlines about climate change also mentioned its health impacts, meaning the public rarely 
+            learns about the connection between the two -- an approach that could have helped drive support for climate actions. 
+        </p>
 
-        <a href="https://www.brennancenter.org/our-work/research-reports/information-gaps-and-misinformation-2022-elections">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Brennan_Center_for_Justice_logo.svg/2560px-Brennan_Center_for_Justice_logo.svg.png" 
-            class='icon_media'></a>
-        
-        <a href="https://www.freep.com/story/news/health/2021/09/15/covid-19-vaccine-misinformation-social-media/8317306002/">
-            <img src="https://play-lh.googleusercontent.com/SVmqDABs5n5O_vmBbKPPQH6m3OVCW4kXAOMBsOcTACOeQd_fQ0fAnZsxi6Mu-4-T7Q" 
-            class='icon_media'></a>
 
-        <a href="https://www.cnn.com/2020/04/27/tech/coronavirus-conspiracy-theory/index.html">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/f/fb/Cnn_logo_red_background.png" 
-            class='icon_media'></a>
-    </p>
+        <p class='paragraph'> 
+            Some of my previous works on <strong> misinformation and disinformation</strong> is available on <a href="https://archive.ph/ngihj"> 
+            the archive of First Draft</a>, where I also served as a <strong>senior researcher</strong>. During this time, I wrote extensively 
+            on these topics throughout the COVID-19 pandemic and the 2020 election. For example, I led <strong> an exclusive investigation</strong> 
+            into Radio Free Asia and uncovered how this US-taxpayer-funded news outlet <a href='https://archive.ph/18uFZ'> repeatedly promote anti-vaccine narratives 
+            abroad</a> during the early rollout of the COVID-19 vaccines.
+            </p>
+
+        <p class='paragraph'>
+            You may also find my other writing on <b>health misinformation</b>, <b>participatory disinformation</b>, <b>voter suppression</b>, 
+            and other forms of <b>information disorder</b>, which have been cited in various publications. Here are a few:
+            </p>
+
+        <p>
+            <a href="https://abcnews.go.com/International/foreigners-black-people-unwelcome-parts-china-amid-covid/story?id=70182204" target="_blank">
+                <img src="https://dlgie0dznny76.cloudfront.net/wp-content/uploads/2018/02/13143430/abcnews-logo.jpg" 
+                class='icon_media_2'></a>
+
+            <a href='https://www.npr.org/2021/04/15/987182241/the-most-popular-j-j-vaccine-story-on-facebook-a-conspiracy-theorist-posted-it' target="_blank">
+                <img src='https://media.npr.org/chrome_svg/npr-logo.svg' class='icon_media_2'></a>
+
+            <a href="https://foreignpolicy.com/2020/11/02/guo-wengui-steve-bannon-hunter-biden-conspiracies-disinformation/" target="_blank">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAkFBMVEXuNCT////uLx3tJQ7wXFP2p6PtHAD+9PT0kIrtKRTxW1H3sK3uMiHtIgj96Of6ysf0jIfvOyvxZVvtIAD/+vr5wr/84N797u3tEQDzgXr98O/1mJLuLBr60c773NrvSz/4ubbwUkbvRTnxaWDvQDLyenP2qKT2nZjyb2fxaF74trHzfXb0h3/wVUv4vbr71dKfn/r8AAAF6klEQVR4nO2d63biLBhGCaloFKwaNR6I1nqcmar3f3dfbKd+7RRU4K3Nynr23waSHSgvEEDGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAaODfC2PS5XIpJbng/uFbkXJ++8XN+XzFYqFizelExST6Vrj67XB1v5+1h8en7fhhJVTCSQzTPOvfev9J+xL9viGjulYtB8MP9xo+dRYjpUkkV6t572XzeL0wG4m0U2Szem6uN/knz0uG9WbvL7vi9nXDFVlrOVLhJVk8HedJrNLFxnSXWw1f4TpWan280XD03r7o0+33LVNlqrfmKU1BFnAlalcMb8pHj3bn+nDRUPxze7U1vuJ8GZM5MvHr0j/ljYaMJTJ3Nyxqk+oejFfmvZSsbY13FIZFeTx6GBaOYmx+xU+arBjFhcb9dsPin3voY1i84r1ZMeulRIZ8bq+nDoZML/wMWWJ7gIbxcg9GR/MNHA1ZWvMzZEnPcn1L0RjGWxpDGff9DJnq2BRpSjEZ0xi+vSofQyYGlhRTEkVtb03dDCXzNeQrW9dj6fQEtuybRIZMHTwNWTy1JJkwgrhIZ8gffA3ZyNZJfiKIGXSGUg99DRNbYxM9hHfE6QyZqvkavjXEJgbhIYPQkPd8DZl93DwPLkRCQ6knfe5nyG1hP9rGYX6khkWbOPA0lLxtSTULDhiUhixRzM+QpbaoH61CAwapYYGnob1r9Sd0HFUSQ/tj/A5tTUtiKLuZJdljaNAviSETQ0uyYWj3uyyG1qamPvI0e6cshrF13q8qhkmj8oYvVTfUa1syGF6j9IaViRZWw8pEfGtLU5Vemz1avIQOn8piaI34i9BBflkMlflDW5QFL2Ioi6GYmVOFT0WVxFBKyzTGuFyzGMx/BLwwzydOusGz3t6G3NwCeBrawmFwrPA35L2mUdHT0DZhuv+5Oe80yo2dDdrZxAPB9zVPwyKZuTvlOSNseYrwGW9vw6ILQmloqaRbig/dnobpgdJQamOK4GHFK76GGaWhMnfZnklWK/oZ6qVtWONjyFfGBGuKb9y+hicPOkORm65vEK0Z8jJ87WORGQrjgpcp2aIoH8PkT0RnmBo/cY+J1gv5GcpkSGcoTIKTZvCH0TM+hunr6hASQz0yXX+gW5roZRgvIxpDqVXP0FtrLwXlHgVnQ57+XUUVaFjo6aWhEc06dMugrxl2RPKFWCzeO1gehvycTSpWu42h/I5jTRMFbzJ86nyhsTmeR6ruhnzXeMtmuhm0DWvZhrW9Sug30dgNr+BuaJttOtEedOZJTLOppGSG2eyxNe0lZHtmXAxfRl/oLjrnxsHdUHa/kI5GIi3kyOvmTYaGtlTyRPSGvobMsPXm+3GPhzo5+hr+CB4Rnyftihsy3ay6IRNPVTfkp50ulTZkaV51w9MX22obylW/4oZMHKtuGNeqbqjXVTeU3aobFvGiZpwOq44hi81/rZChBRjeHxi6AsP7A0NXYHh/YOgKDO8PDF2B4f2BoSswvD8wdAWG9weGrsDw/sDQlRIaWk/38TS0nof0U4bWHcZR1PJZpyserfn9kGFiOw0uinKfR0osOyUjgv2uflx453WPA4xk135aaPihVj5IeeFM6I77I12o9FH2I9U0th4pEp2OLXSuVyN7JS0K8QcUeffisd5H4aio7GeFnthR7RK5Ga1tZxf9ZSZjh/9FmS4vZxd1XF9ZEFKnD7Zz4M70p12lb5OUyYV2+Z1jM46/c7ns+WG4TlK5tJ4C95H6YfesVKL5heWup8PZxapzpUK8MZs2pYgTyp9D+EyshBBysWwcrpbf/5LDw3T9MGdFyvSf5lWqVAjV3a+3+ZUz7D/Qzmsvu/1Kj4qk5LU23hzyWTa5+fcRPtCfZO3j4+aTonweDPJhVvfIr1+fZLN80KNWDP59i8+9S74PzC4a026QOXXSNrUQNttP3XH53ArKrrYx7+oPUozD+Ge8IQOz+5Y9JAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPf8BS3aJbuWRsyMAAAAASUVORK5CYII=" 
+                class='icon_media_2'></a>
+
+            <a href="https://www.nbcnews.com/tech/tech-news/inside-campaign-pizzagate-hunter-biden-n1244331" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/f/f0/NBC_News_%282023%29.svg" class='icon_media_2'> </a>
+
+        </p>
+
+        <p>
+            <a href="https://wisconsinwatch.org/2020/11/milwaukee-flash-drive-vote-fraud-misinformation/" target="_blank">
+                <img src="https://wisconsinwatch.org/wp-content/uploads/2019/06/WCIJ_Logo_Stacked_FullColor_RGB-1.png" 
+                class='icon_media_2'></a>
+
+            <a href="https://www.brennancenter.org/our-work/research-reports/information-gaps-and-misinformation-2022-elections" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Brennan_Center_for_Justice_logo.svg/2560px-Brennan_Center_for_Justice_logo.svg.png" 
+                class='icon_media_2'></a>
+            
+            <a href="https://www.freep.com/story/news/health/2021/09/15/covid-19-vaccine-misinformation-social-media/8317306002/" target="_blank">
+                <img src="https://play-lh.googleusercontent.com/SVmqDABs5n5O_vmBbKPPQH6m3OVCW4kXAOMBsOcTACOeQd_fQ0fAnZsxi6Mu-4-T7Q" 
+                class='icon_media_2'></a>
+
+            <a href="https://www.cnn.com/2020/04/27/tech/coronavirus-conspiracy-theory/index.html" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/f/fb/Cnn_logo_red_background.png" 
+                class='icon_media_2'></a>
+        </p>
+
 
 </body>
 </html>
